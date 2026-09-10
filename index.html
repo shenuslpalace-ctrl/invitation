@@ -411,6 +411,10 @@
                 opacity: 1 !important;
                 transform: none !important;
             }
+
+            .rsvp-arrow {
+                animation: none !important;
+            }
         }
 
         /* HERO */
@@ -873,8 +877,27 @@
             font-size: 13px;
         }
 
-        .rsvp-section .btn {
-            color: #292521;
+        .rsvp-big {
+            margin-top: 40px;
+
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(50px, 9vw, 90px);
+            font-weight: 600;
+            letter-spacing: 6px;
+        }
+
+        .rsvp-arrow {
+            margin: 15px auto 0;
+            font-size: 26px;
+            animation: hintPulse 2s ease-in-out infinite;
+        }
+
+        @media (max-width: 480px) {
+
+            .rsvp-big {
+                margin-top: 28px;
+                letter-spacing: 3px;
+            }
         }
 
         .whatsapp-contacts {
@@ -1601,23 +1624,29 @@
             with us on our special day.
         </p>
 
-        <a
-            href="mailto:wedding@example.com?subject=Wedding RSVP"
-            class="btn reveal reveal-delay-3"
-        >
-            RSVP NOW
-        </a>
+        <p class="reveal reveal-delay-3">
+            Kindly confirm your presence by WhatsApp.<br>
+            We would be delighted to celebrate this special day with you.
+        </p>
+
+        <div class="rsvp-big reveal reveal-delay-3">
+            RSVP
+        </div>
+
+        <div class="rsvp-arrow reveal reveal-delay-3">
+            ↓
+        </div>
 
         <div class="whatsapp-contacts reveal reveal-delay-3">
 
-            <a href="https://wa.me/94771527499" target="_blank" rel="noopener" class="whatsapp-link">
+            <a href="https://wa.me/94781184365" target="_blank" rel="noopener" class="whatsapp-link">
                 <span class="whatsapp-icon">☎</span>
-                Ishara — 0771527499
+                Ishara — 0781184365
             </a>
 
-            <a href="https://wa.me/94771527499" target="_blank" rel="noopener" class="whatsapp-link">
+            <a href="https://wa.me/94779231758" target="_blank" rel="noopener" class="whatsapp-link">
                 <span class="whatsapp-icon">☎</span>
-                Praveena — 0771527499
+                Praveena — 0779231758
             </a>
 
         </div>
